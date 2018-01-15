@@ -1,0 +1,15 @@
+<header
+<p><img src="friend.jpg" alt="friend.jpg" height="60" width="60"/></p>
+<nav>
+    <a href="index.php">Home</a>&nbsp;&nbsp;
+    <a href="login.php">
+	<?php if(isset($_SESSION['email'])) 
+				echo "Logout";
+			else
+				echo "Login";
+	?>
+	</a>&nbsp;&nbsp;
+    <a href="register1.php">Register</a>&nbsp;&nbsp;
+    <a href="book.php">For Booking</a>&nbsp;&nbsp;
+</nav>
+</header>
